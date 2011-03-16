@@ -43,6 +43,11 @@ We plan to start with Facebook, and break down exactly what calls are being made
 The next application we would like to test would be Google Maps, which communicates not only the user's current fine GPS location every few seconds, but also all of the user's friends' locations on Google Latitude. It would be very interesting to see exactly how much and under what conditions this location data is sniffable.
 
 \section{App-to-app security}
+Here we try to build on the testing done by viaForensic's appWatchdog project.\footnote{viaForensics. appWatchdog, February 2, 2011. \url{http://viaforensics.com/appwatchdog/}} They have found several applications that store sensitive data insecurely. These applications include: Mint, Groupon, Kik, Android Mail, and iPhone Mail.
+
+We would first like to install these applications ourselves and verify what data is actually accessible with physical access to the phone, since appWatchdog is short of details. Secondly, we would like to attempt to construct a malicious application that would try to read the sensitive data we find without any intervention from the user. If this is possible, it would also be interesting to see what permissions the user is required to approve before it we can pull this off.
+
+Again, we would like to do testing on both iOS and Android, so that we can get a sense of their robustness in security in relation to one another.
 
 \section{App marketplace security}
 \end{document}
