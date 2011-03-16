@@ -1,0 +1,33 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{fancyhdr, verbatim, hyperref}
+
+\parindent 0in
+\parskip \baselineskip
+
+\pagestyle{fancy}
+\fancyhead[HL]{\textbf{Mobile Device Security}\\Elizabeth Fong, David Lam, David Wang, \& Mark Yen}
+\fancyhead[HR]{\textit{6.857 Spring 2011}}
+
+\begin{document}
+
+\title{6.857 Final Project Proposal: Mobile Device Security}
+\author{Elizabeth Fong, David Lam, David Wang, \& Mark Yen\\
+\{\href{mailto:lizfong@mit.edu}{\texttt{lizfong}}, \href{mailto:d_lam201@mit.edu}{\texttt{d\_lam201}}, \href{mailto:wang4@mit.edu}{\texttt{wang4}}, \href{mailto:markyen@mit.edu}{\texttt{markyen}}\}\texttt{@mit.edu}}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+Mobile devices such as smartphones are becoming increasingly popular, and are set to outstrip sales of PCs for the first time this year. This means that they are also becoming bigger targets for hackers and criminals. One study found that from May to December 2009, malware and spyware on mobile phones doubled from 4\% to 9\%. Still, consumers are not treating smartphones with the same care as they do with their PCs (few users bother to install anti-virus software on their phones, for instance).\footnote{Richmond, Riva. ``Security to Ward Off Crime on Phones'', \textit{The New York Times}, February 23, 2011. \url{http://nyti.ms/f4LQDi}}
+
+However, the number of vulnerabilities in mobile devices is no less than their desktop counterparts. A test conducted by viaForensics found that 10 out of 12 e-mail applications tested failed to store usernames and other information in a secure way.\footnote{Kolesnikov-Jessop, Sonia. ``Hackers Go After the Smartphone'', \textit{The New York Times}, February 13, 2011. \url{http://nyti.ms/e0uVmi}} Also, when communicating over the network, a security professor at Rice University found that Android apps like Facebook and Google Calendar send their information in the clear over the network, even if the accounts are set to always use SSL on the desktop versions.\footnote{Goodin, Dan. ``Security shocker: Android apps send private data in clear'', \textit{The Register}, February 24, 2011. \url{http://www.theregister.co.uk/2011/02/24/android_phone_privacy_shocker/}}
+
+Finally, loopholes have been discovered in the Android Market which allow applications with misleading names to be downloaded, and then automatically download other more malicious apps.\footnote{Schwartz, Mathew J. ``Fake Angry Birds App Exposes Android Vulnerability'', \textit{InformationWeek}, November 15, 2010. \url{http://www.informationweek.com/news/security/vulnerabilities/showArticle.jhtml?articleID=228200946}}
+
+Another problem is the lack of quality-control in third-party app stores. Google has not officially launched their Android Market in China, so a number of third-party app stores have popped up to fill the void. However, an analysis of those markets found only 61\% of those apps to be unique, 36\% to be redistributed, and 2\% to be pirated.\footnote{Lookout Mobile Security. ``App Genome Report'', February 2011. \url{http://bit.ly/idg1tI}} A number of those apps distributed on these third-party app stores are in fact apps repackaged as trojans, which can then hijack certain functions of your phone.\footnote{Rothman, Wilson. ``Smart phone malware: The six worst offenders'', \textit{MSNBC Technolog}, 
+February 16, 2011. \url{http://technolog.msnbc.msn.com/_news/2011/02/16/6063185-smart-phone-malware-the-six-worst-offenders}}
+
+The trend is set to continue. Ed Amoroso, chief security officer at AT\&T, has remarked that 2011 is the ``eye of the storm'', as 4G network speeds start to make hacking more and more attractive to criminals.\footnote{Messmer, Ellen. ``Do wireless providers like Verizon and AT\&T crimp mobile security?'', \textit{Network World}, February 18, 2011. \url{http://www.networkworld.com/news/2011/021811-verizon-att-mobile-security.html}} According to a report from ICSA Labs, ``while most hackers heavily focused on Nokia's mobile phones [in 2010], mobile malware will increasingly target non-Nokia devices including Apple, Blackberry, Android, and Microsoft.'' And according to Adam Powers, CTO of Lancope, ``perimeter-based defenses, such as firewalls and IPS, aren't enough anymore. Corporations must think about how they will deal with smart phones, WiFi devices, and other consumer-oriented mobile devices.''\footnote{Wilson, Tim. ``For Hackers, 2011 Looks Like a Prosperous New Year'', \textit{Darkreading}, January 3, 2011. \url{http://www.darkreading.com/security/vulnerabilities/228901590/for-hackers-2011-looks-like-a-prosperous-new-year.html}}
+
+I would like to investigate existing vulnerabilities and try to identify new ones in mobile devices. I'd like to try to propose solutions to problems identified.
+\end{document}
