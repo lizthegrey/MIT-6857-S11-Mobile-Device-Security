@@ -36,6 +36,11 @@ For our final project, we have three areas that we plan to investigate:
 \end{enumerate}
 
 \section{Network information leakage}
+For this task, we intend to build on the findings that Dan Wallach (professor of computer security at Rice University) posted on his blog in February.\footnote{Wallach, Dan. ``Things overheard on the WiFi from my Android smartphone, February 22, 2011. \url{http://shar.es/3UVsP}} Using Wireshark and Mallory, Wallach tested Facebook, Twitter, several Google apps, and a couple other applications. He found that while Gmail and Google Voice encrypt your traffic, Google Calendar, Google Reader, Google Maps, Google Googles, Twitter, and Facebook send all of their data in the clear, and the data you are currently working with can be intercepted by others monitoring the network traffic.
+
+We plan to start with Facebook, and break down exactly what calls are being made when. From preliminary data gathering, we have determined that several of the calls to the Facebook server are using undocumented parts of the API. We would like to see if we can reconstruct the entire API and make requests against it ourselves. We would also like to see if we can spoof notifications to the mobile device, for instance, chats, messages, or wall posts from arbitrary Facebook users. We would also like to compare the differences between the iOS version of the Facebook application and the Android version of the application. We know from preliminary testing that they use different versions of the API and in some cases different protocols.
+
+The next application we would like to test would be Google Maps, which communicates not only the user's current fine GPS location every few seconds, but also all of the user's friends' locations on Google Latitude. It would be very interesting to see exactly how much and under what conditions this location data is sniffable.
 
 \section{App-to-app security}
 
