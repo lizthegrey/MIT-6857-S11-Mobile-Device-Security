@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2010.2.15)  16 MAR 2011 19:41
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2010.2.15)  17 MAR 2011 02:09
 entering extended mode
 \write18 enabled.
  %&-line parsing enabled.
@@ -260,7 +260,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 21.
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[][][]\OT1/cmr/m/n/9 Greenberg, Andy. ``Re-searcher Builds Mock Bot-net Of 'Twi
+light'-Loving An-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/cmr/m/n/9 droid Users'', \OT1/cmr/m/it/9 Forbes\OT1/cmr/m/n/9 , June 21, 2
+010. []$\OT1/cmtt/m/n/9 http : / / blogs . forbes . com / firewall / 2010 / 06 
+/ 21 /
+ []
+
+[1
 
 {/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 27--27
@@ -310,30 +323,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] (./project_proposal.aux) ) 
+[2] [3] [4] [5] (./project_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 3997 strings out of 493876
- 59438 string characters out of 1150556
- 133554 words of memory out of 3000000
+ 4000 strings out of 493876
+ 59468 string characters out of 1150556
+ 132554 words of memory out of 3000000
  7221 multiletter control sequences out of 10000+50000
  10443 words of font info for 37 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 36i,10n,43p,1708b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2008/texmf-dist/fonts
-/type1/bluesky/cm/cmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bl
-uesky/cm/cmbx12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/
-cmr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.pfb>
-</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/loca
-l/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/texlive/2
-008/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></usr/local/texlive/2008/texmf-d
-ist/fonts/type1/bluesky/cm/cmr9.pfb></usr/local/texlive/2008/texmf-dist/fonts/t
-ype1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/blue
-sky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cm
-ti9.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt12.pfb><
-/usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt9.pfb>
-Output written on project_proposal.pdf (4 pages, 122252 bytes).
+ 36i,10n,43p,1732b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/f
+onts/type1/bluesky/cm/cmbx10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
+1/bluesky/cm/cmbx12.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky
+/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr12.
+pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr17.pfb></usr/
+local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmr6.pfb></usr/local/texli
+ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmr8.pfb></usr/local/texlive/2008/tex
+mf-dist/fonts/type1/bluesky/cm/cmr9.pfb></usr/local/texlive/2008/texmf-dist/fon
+ts/type1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/
+bluesky/cm/cmti10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
+m/cmti9.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt12.p
+fb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmtt9.pfb>
+Output written on project_proposal.pdf (5 pages, 127232 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 131072)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 131072)
  45 words of extra memory for PDF output out of 10000 (max. 10000000)
 
