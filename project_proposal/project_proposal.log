@@ -1,19 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.19)  17 MAR 2011 11:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.19)  17 MAR 2011 23:23
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**project_proposal.tex
-(./project_proposal.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
+**\catcode126=12 \def\normaltilde{~}\catcode126=13 \let~\normaltilde  \input ./
+project_proposal.tex
+(./project_proposal.tex (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -266,19 +258,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 31.
+(Font)              <10.95> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 33.
+(Font)              <9> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
+(Font)              <5> on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
 [][][]\OT1/cmr/m/n/9 Greenberg, Andy. ``Re-searcher Builds Mock Bot-net Of 'Twi
 light'-Loving An-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
 \OT1/cmr/m/n/9 droid Users'', \OT1/cmr/m/it/9 Forbes\OT1/cmr/m/n/9 , June 21, 2
 010. []$\OT1/cmtt/m/n/9 http : / / blogs . forbes . com / firewall / 2010 / 06 
 / 21 /
@@ -287,44 +279,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 [][][]\OT1/cmr/m/n/9 Rothman, Wil-son. ``Smart phone mal-ware: The six worst of
 -fend-ers'', \OT1/cmr/m/it/9 MSNBC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 \OT1/cmr/m/it/9 Tech-nolog\OT1/cmr/m/n/9 , Febru-ary 16, 2011. []$\OT1/cmtt/m/n
 /9 http : / / technolog . msnbc . msn . com / _news / 2011 / 02 / 16 /
  []
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 88--88
+Underfull \hbox (badness 7540) in paragraph at lines 89--89
 [][][]\OT1/cmr/m/n/9 Messmer, Ellen. ``Do wire-less providers like Ver-i-zon an
 d AT&T crimp mo-bile se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 \OT1/cmr/m/n/9 cu-rity?'', \OT1/cmr/m/it/9 Net-work World\OT1/cmr/m/n/9 , Febru
 -ary 18, 2011. []$\OT1/cmtt/m/n/9 http : / / www . networkworld . com / news / 
 2011 /
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 97--97
+Underfull \hbox (badness 6236) in paragraph at lines 98--98
 [][][]\OT1/cmr/m/n/9 Wilson, Tim. ``For Hack-ers, 2011 Looks Like a Pros-per-ou
 s New Year'', \OT1/cmr/m/it/9 Dark-read-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 \OT1/cmr/m/it/9 ing\OT1/cmr/m/n/9 , Jan-uary 3, 2011. []$\OT1/cmtt/m/n/9 http :
  / / www . darkreading . com / security / vulnerabilities / 228901590 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--98
+Underfull \hbox (badness 10000) in paragraph at lines 84--99
 
  []
 
@@ -334,30 +326,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4] [5] (./project_proposal.aux) ) 
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[][][]\OT1/cmr/m/n/9 Google, Inc., March 15, 2011. []$\OT1/cmtt/m/n/9 http : / 
+/ developer . android . com / resources / dashboard /
+ []
+
+[4]
+Underfull \hbox (badness 3189) in paragraph at lines 219--219
+[][][]\OT1/cmr/m/n/9 Hartland, Hay-den, April 29, 2010 []$\OT1/cmtt/m/n/9 http 
+: / / www . emrandhipaa . com / emr-[]and-[]hipaa / 2010 / 04 / 29 /
+ []
+
+[5] [6] [7] (./project_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 4053 strings out of 493848
- 59795 string characters out of 1152822
- 134572 words of memory out of 3000000
- 7272 multiletter control sequences out of 15000+50000
+ 4065 strings out of 493848
+ 59908 string characters out of 1152822
+ 134570 words of memory out of 3000000
+ 7275 multiletter control sequences out of 15000+50000
  10443 words of font info for 37 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,10n,43p,261b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on project_proposal.pdf (5 pages, 202758 bytes).
+ 38i,11n,43p,338b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on project_proposal.pdf (7 pages, 214018 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,14 +6,14 @@
 \parskip \baselineskip
 
 \pagestyle{fancy}
-\fancyhead[HL]{\textbf{Mobile Device Security}\\Elizabeth Fong, David Lam,
+\fancyhead[HL]{\textbf{Mobile Device Security}\\Liz Fong, David Lam,
 David Wang, \& Mark Yen}
 \fancyhead[HR]{\textit{6.857 Spring 2011}}
 
 \begin{document}
 
 \title{6.857 Final Project Proposal: Mobile Device Security}
-\author{Elizabeth Fong, David Lam, David Wang, \& Mark Yen\\
+\author{Liz Fong, David Lam, David Wang, \& Mark Yen\\
 \{\href{mailto:lizfong@mit.edu}{\texttt{lizfong}},
 \href{mailto:d_lam201@mit.edu}{\texttt{d\_lam201}},
 \href{mailto:wang4@mit.edu}{\texttt{wang4}},
@@ -28,7 +28,8 @@ are also becoming bigger targets for hackers and criminals. One study found
 that from May to December 2009, malware and spyware on mobile phones doubled
 from 4\% to 9\%. Still, consumers are not treating smartphones with the same
 care as they do with their PCs (few users bother to install anti-virus software
-on their phones, for instance).\footnote{Richmond, Riva. ``Security to Ward Off
+on their phones, for instance, and the effectiveness of anti-virus software for
+phones is questionable at best).\footnote{Richmond, Riva. ``Security to Ward Off
 Crime on Phones'', \textit{The New York Times}, February 23, 2011.
 \url{http://nyti.ms/f4LQDi}}
 
@@ -96,12 +97,20 @@ mobile devices.''\footnote{Wilson, Tim. ``For Hackers, 2011 Looks Like a
 Prosperous New Year'', \textit{Darkreading}, January 3, 2011.
 \url{http://www.darkreading.com/security/vulnerabilities/228901590/for-hackers-2011-looks-like-a-prosperous-new-year.html}}\\
 
-For our final project, we have three areas that we plan to investigate:
+For our final project, we have five areas that we plan to investigate:
 \begin{enumerate}
 \item \textbf{Network information leakage}: data and personal info that can be
 gained by a network eavesdropper without direct access to the device
 \item \textbf{App-to-app security}: protection of sensitive application data
 from hostile apps residing on the same device
+\item \textbf{Granular userspace permissions}: extending the Android system
+permissions framework to allow applications to request very specific accesses,
+and implementing a security daemon in userspace to allow even older versions
+of the Android platform to take advantage of more granular permissions.
+\item \textbf{Stolen smartphones and lock codes}: examining how resistant to
+attack the data on smartphones is once it is physically in the hands of an
+adversary, even with lock codes. Evaluation of alternate screen lock
+mechanisms accessible to persons with disabilities.
 \item \textbf{App marketplace security}: determine what types of malware can
 pass Google's and Apple's checks and become available for download at the
 official marketplace
@@ -154,6 +163,72 @@ it we can pull this off.
 Again, we would like to do testing on both iOS and Android, so that we can get
 a sense of their robustness in security in relation to one another.
 
+\section{Granular userspace permissions}
+The permissions scheme in the Android market results in substantial confusion
+to users and forces application developers to request far more permissions
+then their applications need to run. Many users will simply click through the
+permissions request screen upon application installation in order to more
+quickly use the application they've chosen, no matter how scary the
+permissions being requested are. Applications that require access to specific
+ad servers and rough geographic location to serve their in-application
+advertisements instead are forced to request access to the entire internet
+without limitations and coarse GPS access. Although more granular permissions
+could be coming to Gingerbread and Honeycomb, over 98.1\% are still running
+applications on Donut, Eclair, and Froyo\footnote{Google, Inc., March 15, 2011.
+\url{http://developer.android.com/resources/dashboard/platform-versions.html}}.
+Thus, the only possibility for implementing granular permissions is in
+userspace rather than as a core component of the platform's security framework.
+
+We propose to create a userspace service that has full permissions and
+delegates those permissions to client applications after consulting
+user-specified preferences and blacklists to evaluate the risk of allowing a
+given permission to a specific resource. We will create sample applications,
+both non-malicious and malicious, and demonstrate that the malicious
+applications cannot not hijack the service, and that the non-malicious
+applications can request a reduced subset of permissions and still function.
+
+The client application will send messages to the userspace security service to
+request permissions be delegated to it (e.g. "com.google.sites.androidapp
+needs to open an https socket to https://sites.google.com"). The userspace
+security service checks its existing records of whether the user has
+previously authorized the application for that URL. If yes, then the connection
+is created in the userspace service (using the permissions originally granted
+by the base OS permissions framework) and is passed to the client application.
+If not, the user is prompted to choose whether to allow the request once, to
+always allow https://sites.google.com access for com.google.sites.androidapp,
+or whether to deny the url request. Additional checks could be implemented such
+as checking the Google SafeBrowsing API to warn the user if an application is
+attempting to contact a known domain associated with malware. The user, or
+parties the user trusts, could maintain lists of known behavior by whitelisted
+applications to import as sensible defaults in order to limit the amount of
+user interaction required for initial runs of an application. Other such
+permissions include access to specific files on the device, access to the
+user's contact list, etc.
+
+The client application needs no permissions of its own at install time since
+its only interactions are through the userspace security service, and thus will
+not need to be authorized by the regular OS permissions framework/market
+system.
+
+\section{Stolen smartphones and lock codes}
+Over 164,000 mobile phones are stolen, lost, or damaged each day in the United
+States\footnote{Asurion,
+\url{http://www.gottahavemymobile.com/it-could-happen-to-you/}}, and
+approximately 5,000 of those are stolen smartphones
+\footnote{Hartland, Hayden, April 29, 2010
+\url{http://www.emrandhipaa.com/emr-and-hipaa/2010/04/29/guest-post-will-your-new-smartphone-ruin-your-practice/}}.
+We are interested in exploring what a determined adversary can accomplish with
+physical control over a smartphone. In particular, we would like to see if
+screen lock and remote wipe functionality can be bypassed by immediately
+pulling the battery/sim from a smartphone before the owner can report a
+missing device, and if the screen lock can be bypassed with booting off
+the SD card slot. We will explore what data is stored unencrypted on the
+SD card and on the phone's USB-accessible flash. Lastly, we would like to see
+if a less intrusive but equally secure lock/unlock mechanism can be devised
+that will enable "busy" users who don't lock their screens due to convenience
+or users with disabilities that cannot use standard passcode or swipe security
+for physical reasons to lock their phones against casual attack.
+
 \section{App marketplace security}
 Finally, if we have extra time after completing everything described above, the
 last goal of our project is to test the approval process for Apple's App Store
@@ -188,5 +263,6 @@ Ideally we would test on both the Android Market and on the App Store; however,
 this may be difficult in practice because to publish to the Android Market and
 the App Store require \$25 and \$85 developers fees respectively, which would
 prevent us from creating multiple accounts to publish from if we were to get
-blocked.
+blocked. We are working on acquiring permission from Rich Cannings at Google
+to perform tests in the live Android Market.
 \end{document}
