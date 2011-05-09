@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="helptext">This is a list of all granted permissions.</string>
+  <string name="app_name">PermissionsProxy</string>
+  <string name="permission_request">The application %s would like for permissions to access the URL</string>
+  <string name="test_app_name">ProxyTest</string>
+  <string name="fetch_google_com">www.google.com</string>
+  <string name="fetch_phishing_com">phishing.com</string>
+  <string name="approve_15">Approve (15s)</string>
+  <string name="deny_15">Deny (15s)</string>
+  <string name="approve_60">Approve (60s)</string>
+  <string name="deny_60">Deny (60s)</string>
+  <string name="waiting">Waiting for service</string>
+  <string name="ready">Ready</string>
+  <string name="not_ready">Not ready</string>
+  <string name="remote_error">Remote error</string>
+  <string name="security_exception">Security exception: </string>
+  <string name="safebrowsing">Rejected by SafeBrowsing</string>
+  <string name="user_declined">User declined</string>
+  <string name="io_error">IO error</string>
+</resources>
